@@ -1,0 +1,84 @@
+.header {
+  height: 60px;
+  /* Display flex means show in row and align items
+   means tells how flexbox items are aligned across main axis
+   */
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+
+  /* Stick at position 0 from top  */
+  position: sticky;
+  top: 0;
+
+  /* Z-Index tells stack order or who is showing first */
+  z-index: 100;
+}
+
+.header__logo {
+  width: 100px;
+  /*object-fit: contain image keeps its aspect ratio,
+    but is resized to fit within the given dimension */
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  /*Stretch as big as u can go flex: 1 says that*/
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  /* !important Overrides previous data
+         and puts current data */
+  height: 22px !important;
+  background-color: #cd9042;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  /* justify-content tells how flex items are spaced */
+  justify-content: space-evenly;
+}
+
+.header__option {
+  display: flex;
+  /* flex direction tells which direction
+     flex items are aligned */
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
